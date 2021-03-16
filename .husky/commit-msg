@@ -1,4 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn commitlint --edit 
+# .husky/commit-msg
+# ...
+npx --no-install commitlint --edit $1
+# or
+yarn commitlint --edit $1
